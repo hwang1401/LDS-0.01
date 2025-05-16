@@ -1,0 +1,44 @@
+{
+  "name": "lumir-design-tokens",
+  "version": "2.0.1",
+  "description": "Lumir Design System 토큰",
+  "main": "dist/js/tokens.js",
+  "module": "dist/js/tokens.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "shared/current/icons"
+  ],
+  "scripts": {
+    "build": "node scripts/build-simple.js",
+    "build:sd": "node scripts/build.js",
+    "build:watch": "nodemon --watch shared --watch system-1 --ext json --exec 'node scripts/build-simple.js'",
+    "clean": "rimraf dist",
+    "validate": "node scripts/validate-token-references.js",
+    "optimize": "node scripts/optimize-tokens.js",
+    "add-missing": "node scripts/add-missing-semantic-tokens.js",
+    "prebuild": "npm run validate && npm run optimize",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.8.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.0",
+    "nodemon": "^2.0.22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/organization/lumir-design-system.git",
+    "directory": "packages/tokens"
+  },
+  "keywords": [
+    "design-system",
+    "tokens",
+    "lumir"
+  ],
+  "license": "MIT"
+}

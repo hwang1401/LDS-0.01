@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lumir/*": ["lumir-design-system/packages/*/src"]
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "./lumir-design-system" }
+  ]
+} 

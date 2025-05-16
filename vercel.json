@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd lumir-design-system && npm install -g storybook && npm config set legacy-peer-deps true && npm install && cd packages/tokens && npm run build && cd ../components && npm run build-storybook",
+  "outputDirectory": "lumir-design-system/packages/components/storybook-static",
+  "framework": "storybook",
+  "installCommand": "npm install -g pnpm",
+  "nodeVersion": "18.x"
+} 

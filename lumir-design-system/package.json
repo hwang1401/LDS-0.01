@@ -1,0 +1,44 @@
+{
+  "name": "lumir-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "token:build": "turbo run build --filter=@lumir/tokens",
+    "token:version": "node packages/utils/version-manager.js",
+    "commit": "cz",
+    "release": "pnpm build && changeset publish",
+    "version": "changeset version && pnpm install",
+    "changeset": "changeset",
+    "publish-packages": "node scripts/publish.js"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.2",
+    "@storybook/addon-a11y": "^8.6.12",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-links": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.8",
+    "semantic-release": "^24.2.3",
+    "turbo": "^2.5.3",
+    "typescript": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

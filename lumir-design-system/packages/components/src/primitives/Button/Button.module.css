@@ -1,0 +1,442 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--semantic-shape-radius-button-md);
+  font-family: var(--semantic-typography-body-1-medium-fontFamily);
+  font-weight: var(--semantic-typography-body-1-medium-fontWeight);
+  cursor: pointer;
+  transition: 
+    background-color var(--semantic-animation-duration-transition-button) var(--semantic-animation-easing-interaction-button),
+    transform var(--semantic-animation-duration-transition-button) var(--semantic-animation-easing-interaction-button),
+    box-shadow var(--semantic-animation-duration-transition-button) var(--semantic-animation-easing-interaction-button),
+    border-color var(--semantic-animation-duration-transition-button) var(--semantic-animation-easing-interaction-button);
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: var(--semantic-focus-outline-width) var(--semantic-focus-outline-style) var(--semantic-focus-outline-color);
+  outline-offset: 2px;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* 크기 변형 */
+.button--xsm {
+  height: var(--semantic-height-global-sm);
+  font-size: var(--semantic-typography-label-2-medium-fontSize);
+  line-height: var(--semantic-typography-label-2-medium-lineHeight);
+  letter-spacing: var(--semantic-typography-label-2-medium-letterSpacing);
+}
+
+.button--xsm.button--text-only {
+  padding: 0 var(--semantic-spacingHor-global-sm);
+}
+
+.button--xsm.button--text-icon {
+  padding: 0 var(--semantic-spacingHor-global-sm);
+}
+
+.button--xsm.button--icon-only {
+  padding: 0 var(--semantic-spacingHor-global-xs);
+  width: var(--semantic-height-global-sm);
+}
+
+.button--sm {
+  height: var(--semantic-height-global-md);
+  font-size: var(--semantic-typography-label-1-medium-fontSize);
+  line-height: var(--semantic-typography-label-1-medium-lineHeight);
+  letter-spacing: var(--semantic-typography-label-1-medium-letterSpacing);
+}
+
+.button--sm.button--text-only {
+  padding: 0 var(--semantic-spacingHor-global-md);
+}
+
+.button--sm.button--text-icon {
+  padding: 0 var(--semantic-spacingHor-global-md);
+}
+
+.button--sm.button--icon-only {
+  padding: 0 var(--semantic-spacingHor-global-xs);
+  width: var(--semantic-height-global-md);
+}
+
+.button--md {
+  height: var(--semantic-height-global-lg);
+  font-size: var(--semantic-typography-body-2-medium-fontSize);
+  line-height: var(--semantic-typography-body-2-medium-lineHeight);
+  letter-spacing: var(--semantic-typography-body-2-medium-letterSpacing);
+}
+
+.button--md.button--text-only {
+  padding: 0 var(--semantic-spacingHor-global-lg);
+}
+
+.button--md.button--text-icon {
+  padding: 0 var(--semantic-spacingHor-global-lg);
+}
+
+.button--md.button--icon-only {
+  padding: 0 var(--semantic-spacingHor-global-sm);
+  width: var(--semantic-height-global-lg);
+}
+
+.button--lg {
+  height: var(--semantic-height-global-xl);
+  font-size: var(--semantic-typography-body-2-medium-fontSize);
+  line-height: var(--semantic-typography-body-2-medium-lineHeight);
+  letter-spacing: var(--semantic-typography-body-2-medium-letterSpacing);
+}
+
+.button--lg.button--text-only {
+  padding: 0 var(--semantic-spacingHor-global-xl);
+}
+
+.button--lg.button--text-icon {
+  padding: 0 var(--semantic-spacingHor-global-xl);
+}
+
+.button--lg.button--icon-only {
+  padding: 0 var(--semantic-spacingHor-global-sm);
+  width: var(--semantic-height-global-xl);
+}
+
+.button--xlg {
+  height: var(--semantic-height-global-xxl);
+  font-size: var(--semantic-typography-body-1-medium-fontSize);
+  line-height: var(--semantic-typography-body-1-medium-lineHeight);
+  letter-spacing: var(--semantic-typography-body-1-medium-letterSpacing);
+}
+
+.button--xlg.button--text-only {
+  padding: 0 var(--semantic-spacingHor-global-xl);
+}
+
+.button--xlg.button--text-icon {
+  padding: 0 var(--semantic-spacingHor-global-xl);
+}
+
+.button--xlg.button--icon-only {
+  padding: 0 var(--semantic-spacingHor-global-sm);
+  width: var(--semantic-height-global-xxl);
+}
+
+/* Filled 버튼 (기본 스타일) */
+.button--filled.button--primary {
+  background-color: var(--semantic-color-primary-background-1-rest);
+  color: var(--semantic-color-primary-oncolor-global);
+  box-shadow: none;
+}
+
+.button--filled.button--primary:hover:not(:disabled) {
+  background-color: var(--semantic-color-primary-background-1-hovered);
+}
+
+.button--filled.button--primary:active:not(:disabled) {
+  background-color: var(--semantic-color-primary-background-1-pressed);
+}
+
+.button--filled.button--primary.button--selected {
+  background-color: var(--semantic-color-primary-background-1-selected);
+}
+
+.button--filled.button--primary:disabled {
+  background-color: var(--semantic-color-primary-background-1-disabled);
+  color: var(--semantic-color-primary-oncolor-global);
+  opacity: 0.5;
+}
+
+/* Outlined 버튼 스타일 */
+.button--outlined {
+  background-color: transparent;
+  border: var(--semantic-shape-borderWidth-button) solid;
+}
+
+.button--outlined.button--primary {
+  color: var(--semantic-color-primary-foreground-1-rest);
+  border-color: var(--semantic-color-primary-stroke-1-rest);
+}
+
+.button--outlined.button--primary:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-primary-foreground-1-hovered);
+  border-color: var(--semantic-color-primary-foreground-1-hovered);
+}
+
+.button--outlined.button--primary:active:not(:disabled) {
+  background-color: var(--semantic-color-primary-background-1-pressed);
+  color: var(--semantic-color-primary-foreground-1-rest);
+  border-color: var(--semantic-color-primary-stroke-1-rest);
+}
+
+.button--outlined.button--primary.button--selected {
+  background-color: var(--semantic-color-overlay-background-light-medium);
+  color: var(--semantic-color-primary-foreground-1-selected);
+  border-color: var(--semantic-color-primary-stroke-1-rest);
+}
+
+.button--outlined.button--primary:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  border-color: var(--semantic-color-secondary-stroke-2-rest);
+  opacity: 0.5;
+}
+
+/* Transparent 버튼 스타일 */
+.button--transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.button--transparent.button--primary {
+  color: var(--semantic-color-primary-foreground-1-rest);
+}
+
+.button--transparent.button--primary:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-primary-foreground-1-hovered);
+}
+
+.button--transparent.button--primary:active:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-medium);
+  color: var(--semantic-color-primary-foreground-1-pressed);
+}
+
+.button--transparent.button--primary.button--selected {
+  background-color: var(--semantic-color-primary-background-1-selected);
+  color: var(--semantic-color-primary-foreground-1-rest);
+}
+
+.button--transparent.button--primary:focus-visible {
+  outline-color: var(--semantic-color-primary-stroke-1-rest);
+}
+
+.button--transparent.button--primary:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  opacity: 0.5;
+}
+
+/* Secondary 색상 테마 */
+.button--filled.button--secondary {
+  background-color: var(--semantic-color-secondary-background-1-rest);
+  color: var(--semantic-color-secondary-foreground-1-rest);
+}
+
+.button--filled.button--secondary:hover:not(:disabled) {
+  background-color: var(--semantic-color-secondary-background-1-hovered);
+}
+
+.button--filled.button--secondary:active:not(:disabled) {
+  background-color: var(--semantic-color-secondary-background-1-pressed);
+}
+
+.button--filled.button--secondary.button--selected {
+  background-color: var(--semantic-color-secondary-background-1-selected);
+}
+
+.button--filled.button--secondary:disabled {
+  background-color: var(--semantic-color-secondary-background-1-disabled);
+  color: var(--semantic-color-secondary-foreground-1-rest);
+  opacity: 0.5;
+}
+
+.button--outlined.button--secondary {
+  color: var(--semantic-color-secondary-foreground-1-rest);
+  border-color: var(--semantic-color-secondary-stroke-1-rest);
+}
+
+.button--outlined.button--secondary:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-secondary-foreground-1-hovered);
+  border-color: var(--semantic-color-secondary-foreground-1-hovered);
+}
+
+.button--outlined.button--secondary:active:not(:disabled) {
+  background-color: var(--semantic-color-secondary-background-1-pressed);
+  color: var(--semantic-color-secondary-foreground-1-rest);
+  border-color: var(--semantic-color-secondary-stroke-1-rest);
+}
+
+.button--outlined.button--secondary.button--selected {
+  background-color: var(--semantic-color-overlay-background-light-medium);
+  color: var(--semantic-color-secondary-foreground-1-selected);
+  border-color: var(--semantic-color-secondary-stroke-1-rest);
+}
+
+.button--outlined.button--secondary:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  border-color: var(--semantic-color-secondary-stroke-2-rest);
+  opacity: 0.5;
+}
+
+.button--transparent.button--secondary {
+  color: var(--semantic-color-secondary-foreground-1-rest);
+}
+
+.button--transparent.button--secondary:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-secondary-foreground-1-hovered);
+}
+
+.button--transparent.button--secondary:active:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-medium);
+  color: var(--semantic-color-secondary-foreground-1-pressed);
+}
+
+.button--transparent.button--secondary.button--selected {
+  background-color: var(--semantic-color-secondary-background-1-selected);
+  color: var(--semantic-color-secondary-foreground-1-rest);
+}
+
+.button--transparent.button--secondary:focus-visible {
+  outline-color: var(--semantic-color-secondary-stroke-1-rest);
+}
+
+.button--transparent.button--secondary:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  opacity: 0.5;
+}
+
+/* CTA 색상 테마 */
+.button--filled.button--cta {
+  background-color: var(--semantic-color-cta-background-1-rest);
+  color: var(--semantic-color-cta-oncolor-global);
+}
+
+.button--filled.button--cta:hover:not(:disabled) {
+  background-color: var(--semantic-color-cta-background-1-hovered);
+}
+
+.button--filled.button--cta:active:not(:disabled) {
+  background-color: var(--semantic-color-cta-background-1-pressed);
+}
+
+.button--filled.button--cta.button--selected {
+  background-color: var(--semantic-color-cta-background-1-selected);
+}
+
+.button--filled.button--cta:disabled {
+  background-color: var(--semantic-color-cta-background-1-disabled);
+  color: var(--semantic-color-cta-oncolor-global);
+  opacity: 0.5;
+}
+
+.button--outlined.button--cta {
+  color: var(--semantic-color-cta-foreground-1-rest);
+  border-color: var(--semantic-color-cta-stroke-1-rest);
+}
+
+.button--outlined.button--cta:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-cta-foreground-1-hovered);
+  border-color: var(--semantic-color-cta-stroke-1-hovered);
+}
+
+.button--outlined.button--cta:active:not(:disabled) {
+  background-color: var(--semantic-color-cta-background-1-pressed);
+  color: var(--semantic-color-cta-foreground-1-rest);
+  border-color: var(--semantic-color-cta-stroke-1-rest);
+}
+
+.button--outlined.button--cta.button--selected {
+  background-color: var(--semantic-color-cta-background-1-selected);
+  color: var(--semantic-color-cta-foreground-1-selected);
+  border-color: var(--semantic-color-cta-stroke-1-rest);
+}
+
+.button--outlined.button--cta:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  border-color: var(--semantic-color-secondary-stroke-2-rest);
+  opacity: 0.5;
+}
+
+.button--transparent.button--cta {
+  color: var(--semantic-color-cta-foreground-1-rest);
+}
+
+.button--transparent.button--cta:hover:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-subtle);
+  color: var(--semantic-color-cta-foreground-1-hovered);
+}
+
+.button--transparent.button--cta:active:not(:disabled) {
+  background-color: var(--semantic-color-overlay-background-light-medium);
+  color: var(--semantic-color-cta-foreground-1-pressed);
+}
+
+.button--transparent.button--cta.button--selected {
+  background-color: var(--semantic-color-cta-background-1-selected);
+  color: var(--semantic-color-cta-foreground-1-rest);
+}
+
+.button--transparent.button--cta:focus-visible {
+  outline-color: var(--semantic-color-cta-stroke-1-rest);
+}
+
+.button--transparent.button--cta:disabled {
+  color: var(--semantic-color-secondary-foreground-2-disabled);
+  opacity: 0.5;
+}
+
+/* 상태 */
+.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.button--fullWidth {
+  width: 100%;
+}
+
+.button--loading {
+  color: transparent;
+}
+
+.button--loading:disabled {
+  opacity: 0.8;
+}
+
+/* 아이콘 */
+.leftIcon {
+  margin-right: var(--semantic-spacingHor-global-xxs);
+  display: inline-flex;
+  align-items: center;
+}
+
+.rightIcon {
+  margin-left: var(--semantic-spacingHor-global-xxs);
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--icon-only .leftIcon,
+.button--icon-only .rightIcon {
+  margin: 0;
+}
+
+/* 로딩 스피너 */
+.spinner {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: var(--semantic-shape-borderWidth-thin) solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin var(--semantic-animation-duration-feedback-loading) linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 내용물 */
+.content {
+  display: inline-flex;
+  align-items: center;
+} 

@@ -1,0 +1,54 @@
+/* 스토리북 전역 스타일 - 디자인 시스템 토큰 기반 */
+
+/* 스토리북 바디 스타일 */
+body {
+    font-family: var(--foundation-typography-fontFamily-base);
+    color: var(--semantic-color-secondary-foreground-1-rest);
+    background-color: var(--foundation-color-grey-light-100);
+    line-height: var(--semantic-typography-body-1-regular-lineHeight);
+  }
+  
+  /* 버튼 스타일링 */
+  button {
+    border-radius: var(--semantic-radius-global-md);
+    transition-duration: var(--semantic-animation-duration-global-fast);
+    transition-timing-function: var(--semantic-animation-easing-global-default);
+  }
+  
+  /* 입력 필드 스타일링 */
+  input, select, textarea {
+    border-radius: var(--semantic-radius-global-md);
+    border-width: var(--semantic-shape-borderWidth-input-default);
+    font-family: var(--foundation-typography-fontFamily-base);
+  }
+  
+  /* 패널 및 카드 스타일링 */
+  .card, .panel {
+    border-radius: var(--semantic-shape-radius-card);
+    box-shadow: 0px var(--foundation-shadow-light-10-y) var(--foundation-shadow-light-10-blur) var(--foundation-shadow-light-10-spread) var(--foundation-shadow-light-10-color);
+  }
+  
+  /* 문서 스타일링 */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--semantic-spacingVer-global-md);
+  }
+  
+  h1 {
+    font-size: var(--semantic-typography-title-1-regular-fontSize);
+    font-weight: var(--semantic-typography-title-1-bold-fontWeight);
+  }
+  
+  h2 {
+    font-size: var(--semantic-typography-title-2-regular-fontSize);
+    font-weight: var(--semantic-typography-title-2-bold-fontWeight);
+  }
+  
+  h3 {
+    font-size: var(--semantic-typography-heading-1-regular-fontSize);
+    font-weight: var(--semantic-typography-heading-1-medium-fontWeight);
+  }
+  
+  p {
+    margin-bottom: var(--semantic-spacingVer-global-sm);
+    font-size: var(--semantic-typography-body-1-regular-fontSize);
+  } 

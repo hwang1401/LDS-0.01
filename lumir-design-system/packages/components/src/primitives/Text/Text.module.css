@@ -1,0 +1,388 @@
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: var(--foundation-typography-fontFamily-base);
+  }
+  
+  /* 기본 타이포그래피 스타일 */
+  
+  /* Hero 타이포그래피 */
+  .text--hero-1-regular {
+    font-size: var(--semantic-typography-hero-1-regular-fontSize);
+    line-height: var(--semantic-typography-hero-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-hero-1-regular-fontWeight);
+  }
+  
+  .text--hero-1-medium {
+    font-size: var(--semantic-typography-hero-1-medium-fontSize);
+    line-height: var(--semantic-typography-hero-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-hero-1-medium-fontWeight);
+  }
+  
+  .text--hero-1-bold {
+    font-size: var(--semantic-typography-hero-1-bold-fontSize);
+    line-height: var(--semantic-typography-hero-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-hero-1-bold-fontWeight);
+  }
+  
+  .text--hero-2-regular {
+    font-size: var(--semantic-typography-hero-2-regular-fontSize);
+    line-height: var(--semantic-typography-hero-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-hero-2-regular-fontWeight);
+  }
+  
+  .text--hero-2-medium {
+    font-size: var(--semantic-typography-hero-2-medium-fontSize);
+    line-height: var(--semantic-typography-hero-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-hero-2-medium-fontWeight);
+  }
+  
+  .text--hero-2-bold {
+    font-size: var(--semantic-typography-hero-2-bold-fontSize);
+    line-height: var(--semantic-typography-hero-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-hero-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-hero-2-bold-fontWeight);
+  }
+  
+  /* Title 타이포그래피 */
+  .text--title-1-regular {
+    font-size: var(--semantic-typography-title-1-regular-fontSize);
+    line-height: var(--semantic-typography-title-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-title-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-title-1-regular-fontWeight);
+  }
+  
+  .text--title-1-medium {
+    font-size: var(--semantic-typography-title-1-medium-fontSize);
+    line-height: var(--semantic-typography-title-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-title-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-title-1-medium-fontWeight);
+  }
+  
+  .text--title-1-bold {
+    font-size: var(--semantic-typography-title-1-bold-fontSize);
+    line-height: var(--semantic-typography-title-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-title-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-title-1-bold-fontWeight);
+  }
+  
+  .text--title-2-regular {
+    font-size: var(--semantic-typography-title-2-regular-fontSize);
+    line-height: var(--semantic-typography-title-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-title-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-title-2-regular-fontWeight);
+  }
+  
+  .text--title-2-medium {
+    font-size: var(--semantic-typography-title-2-medium-fontSize);
+    line-height: var(--semantic-typography-title-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-title-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-title-2-medium-fontWeight);
+  }
+  
+  .text--title-2-bold {
+    font-size: var(--semantic-typography-title-2-bold-fontSize);
+    line-height: var(--semantic-typography-title-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-title-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-title-2-bold-fontWeight);
+  }
+  
+  /* Heading 타이포그래피 */
+  .text--heading-1-regular {
+    font-size: var(--semantic-typography-heading-1-regular-fontSize);
+    line-height: var(--semantic-typography-heading-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-heading-1-regular-fontWeight);
+  }
+  
+  .text--heading-1-medium {
+    font-size: var(--semantic-typography-heading-1-medium-fontSize);
+    line-height: var(--semantic-typography-heading-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-heading-1-medium-fontWeight);
+  }
+  
+  .text--heading-1-bold {
+    font-size: var(--semantic-typography-heading-1-bold-fontSize);
+    line-height: var(--semantic-typography-heading-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-heading-1-bold-fontWeight);
+  }
+  
+  .text--heading-2-regular {
+    font-size: var(--semantic-typography-heading-2-regular-fontSize);
+    line-height: var(--semantic-typography-heading-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-heading-2-regular-fontWeight);
+  }
+  
+  .text--heading-2-medium {
+    font-size: var(--semantic-typography-heading-2-medium-fontSize);
+    line-height: var(--semantic-typography-heading-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-heading-2-medium-fontWeight);
+  }
+  
+  .text--heading-2-bold {
+    font-size: var(--semantic-typography-heading-2-bold-fontSize);
+    line-height: var(--semantic-typography-heading-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-heading-2-bold-fontWeight);
+  }
+  
+  .text--heading-3-regular {
+    font-size: var(--semantic-typography-heading-3-regular-fontSize);
+    line-height: var(--semantic-typography-heading-3-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-3-regular-letterSpacing);
+    font-weight: var(--semantic-typography-heading-3-regular-fontWeight);
+  }
+  
+  .text--heading-3-medium {
+    font-size: var(--semantic-typography-heading-3-medium-fontSize);
+    line-height: var(--semantic-typography-heading-3-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-3-medium-letterSpacing);
+    font-weight: var(--semantic-typography-heading-3-medium-fontWeight);
+  }
+  
+  .text--heading-3-bold {
+    font-size: var(--semantic-typography-heading-3-bold-fontSize);
+    line-height: var(--semantic-typography-heading-3-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-heading-3-bold-letterSpacing);
+    font-weight: var(--semantic-typography-heading-3-bold-fontWeight);
+  }
+  
+  /* Body 타이포그래피 */
+  .text--body-1-regular {
+    font-size: var(--semantic-typography-body-1-regular-fontSize);
+    line-height: var(--semantic-typography-body-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-body-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-body-1-regular-fontWeight);
+  }
+  
+  .text--body-1-medium {
+    font-size: var(--semantic-typography-body-1-medium-fontSize);
+    line-height: var(--semantic-typography-body-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-body-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-body-1-medium-fontWeight);
+  }
+  
+  .text--body-1-bold {
+    font-size: var(--semantic-typography-body-1-bold-fontSize);
+    line-height: var(--semantic-typography-body-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-body-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-body-1-bold-fontWeight);
+  }
+  
+  .text--body-2-regular {
+    font-size: var(--semantic-typography-body-2-regular-fontSize);
+    line-height: var(--semantic-typography-body-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-body-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-body-2-regular-fontWeight);
+  }
+  
+  .text--body-2-medium {
+    font-size: var(--semantic-typography-body-2-medium-fontSize);
+    line-height: var(--semantic-typography-body-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-body-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-body-2-medium-fontWeight);
+  }
+  
+  .text--body-2-bold {
+    font-size: var(--semantic-typography-body-2-bold-fontSize);
+    line-height: var(--semantic-typography-body-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-body-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-body-2-bold-fontWeight);
+  }
+  
+  /* Label 타이포그래피 */
+  .text--label-1-regular {
+    font-size: var(--semantic-typography-label-1-regular-fontSize);
+    line-height: var(--semantic-typography-label-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-label-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-label-1-regular-fontWeight);
+  }
+  
+  .text--label-1-medium {
+    font-size: var(--semantic-typography-label-1-medium-fontSize);
+    line-height: var(--semantic-typography-label-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-label-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-label-1-medium-fontWeight);
+  }
+  
+  .text--label-1-bold {
+    font-size: var(--semantic-typography-label-1-bold-fontSize);
+    line-height: var(--semantic-typography-label-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-label-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-label-1-bold-fontWeight);
+  }
+  
+  .text--label-2-regular {
+    font-size: var(--semantic-typography-label-2-regular-fontSize);
+    line-height: var(--semantic-typography-label-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-label-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-label-2-regular-fontWeight);
+  }
+  
+  .text--label-2-medium {
+    font-size: var(--semantic-typography-label-2-medium-fontSize);
+    line-height: var(--semantic-typography-label-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-label-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-label-2-medium-fontWeight);
+  }
+  
+  .text--label-2-bold {
+    font-size: var(--semantic-typography-label-2-bold-fontSize);
+    line-height: var(--semantic-typography-label-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-label-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-label-2-bold-fontWeight);
+  }
+  
+  /* Caption 타이포그래피 */
+  .text--caption-1-regular {
+    font-size: var(--semantic-typography-caption-1-regular-fontSize);
+    line-height: var(--semantic-typography-caption-1-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-1-regular-letterSpacing);
+    font-weight: var(--semantic-typography-caption-1-regular-fontWeight);
+  }
+  
+  .text--caption-1-medium {
+    font-size: var(--semantic-typography-caption-1-medium-fontSize);
+    line-height: var(--semantic-typography-caption-1-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-1-medium-letterSpacing);
+    font-weight: var(--semantic-typography-caption-1-medium-fontWeight);
+  }
+  
+  .text--caption-1-bold {
+    font-size: var(--semantic-typography-caption-1-bold-fontSize);
+    line-height: var(--semantic-typography-caption-1-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-1-bold-letterSpacing);
+    font-weight: var(--semantic-typography-caption-1-bold-fontWeight);
+  }
+  
+  .text--caption-2-regular {
+    font-size: var(--semantic-typography-caption-2-regular-fontSize);
+    line-height: var(--semantic-typography-caption-2-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-2-regular-letterSpacing);
+    font-weight: var(--semantic-typography-caption-2-regular-fontWeight);
+  }
+  
+  .text--caption-2-medium {
+    font-size: var(--semantic-typography-caption-2-medium-fontSize);
+    line-height: var(--semantic-typography-caption-2-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-2-medium-letterSpacing);
+    font-weight: var(--semantic-typography-caption-2-medium-fontWeight);
+  }
+  
+  .text--caption-2-bold {
+    font-size: var(--semantic-typography-caption-2-bold-fontSize);
+    line-height: var(--semantic-typography-caption-2-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-2-bold-letterSpacing);
+    font-weight: var(--semantic-typography-caption-2-bold-fontWeight);
+  }
+  
+  .text--caption-3-regular {
+    font-size: var(--semantic-typography-caption-3-regular-fontSize);
+    line-height: var(--semantic-typography-caption-3-regular-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-3-regular-letterSpacing);
+    font-weight: var(--semantic-typography-caption-3-regular-fontWeight);
+  }
+  
+  .text--caption-3-medium {
+    font-size: var(--semantic-typography-caption-3-medium-fontSize);
+    line-height: var(--semantic-typography-caption-3-medium-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-3-medium-letterSpacing);
+    font-weight: var(--semantic-typography-caption-3-medium-fontWeight);
+  }
+  
+  .text--caption-3-bold {
+    font-size: var(--semantic-typography-caption-3-bold-fontSize);
+    line-height: var(--semantic-typography-caption-3-bold-lineHeight);
+    letter-spacing: var(--semantic-typography-caption-3-bold-letterSpacing);
+    font-weight: var(--semantic-typography-caption-3-bold-fontWeight);
+  }
+  
+  /* 정렬 */
+  .text--align-left {
+    text-align: left;
+  }
+  
+  .text--align-center {
+    text-align: center;
+  }
+  
+  .text--align-right {
+    text-align: right;
+  }
+  
+  .text--align-justify {
+    text-align: justify;
+  }
+  
+  /* 텍스트 변형 */
+  .text--transform-none {
+    text-transform: none;
+  }
+  
+  .text--transform-capitalize {
+    text-transform: capitalize;
+  }
+  
+  .text--transform-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text--transform-lowercase {
+    text-transform: lowercase;
+  }
+  
+  /* 색상 */
+  .text--color-primary {
+    color: var(--semantic-color-secondary-foreground-1-rest);
+  }
+  
+  .text--color-secondary {
+    color: var(--semantic-color-secondary-foreground-2-rest);
+  }
+  
+  .text--color-tertiary {
+    color: var(--semantic-color-secondary-foreground-3-rest);
+  }
+  
+  .text--color-onColor {
+    color: var(--semantic-color-primary-oncolor-global);
+  }
+  
+  .text--color-success {
+    color: var(--semantic-color-status-success-global);
+  }
+  
+  .text--color-warning {
+    color: var(--semantic-color-status-warning-global);
+  }
+  
+  .text--color-error {
+    color: var(--semantic-color-status-error-global);
+  }
+  
+  .text--color-info {
+    color: var(--semantic-color-status-info-global);
+  }
+  
+  /* 노랩 및 truncate */
+  .text--nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .text--truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } 
